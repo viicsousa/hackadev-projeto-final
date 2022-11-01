@@ -1,0 +1,42 @@
+h2 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.infos {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+}
+
+.infos span:nth-child(2) {
+    font-weight: bold;
+    color: black;
+}
+.image img {
+    width: 200px;
+    height: 190px;
+    background-color: white;
+    object-fit: cover;
+    margin: 7px;
+    cursor: pointer;
+}
+
+.image img:hover{
+    transform: filter 0.2s;
+    transition: ease-in-out 0.4s;
+    filter: brightness(0.9);
+}
